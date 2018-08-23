@@ -1,18 +1,29 @@
+body {
+    margin: 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+#navigation{
+    text-align: right;
+    font-size: 2rem;
+    width: 100%;
+}
+
 #background {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("https://lh3.googleusercontent.com/Oo5142D6TucGXzxbO-kGlExxCVKMCKcAgq0JKAJRaKxUiVvv7koBhXZXNkeOVNGeJ6T951HvU7-DQ3F5U2m_yyQ84AYPSVRuLrKNLznsn0alAeAusnjeYSmiDIiE3Ny59VGd5vVR1Q=w2400");
     background-repeat: no-repeat;
     background-position: right 100%;
     background-size: cover;
     background-attachment: fixed;
-}
-
-#navigation {
-    font-family: cursive;
-    text-align: right;
-    margin: 0;
-    padding: 0;
 }
 
 @media only screen and (max-width: 400px) {
