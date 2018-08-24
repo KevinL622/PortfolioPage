@@ -19,11 +19,6 @@ body {
 }
 
 #navigation a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navigation a.active {
   background-color: #4CAF50;
   color: white;
 }
@@ -41,20 +36,35 @@ body {
 
 #welcome{
     text-align: center;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 .welcomeText{
-    vertical-align: middle;
     color: white;
 }
 
-#projects{
-    height: 100vh;
+.welcomeText.name, .title{
+    font-size: 3rem;
 }
 
-#technologies, #contact{
-    height: 50vh;
+#projects{
+    text-align: center;
+    height: auto;
+}
+
+.thumbnail{
+    width: auto;
+    height: 47vh;
+    min-width: 320px;
+}
+
+#technologies, #about{
+    height: 75vh;
+    text-align: center;
+}
+
+i{
+    font-size: 150px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -64,5 +74,9 @@ body {
         background-size: 100% 100%;
         background-position: center;
         background-attachment: fixed;
+    }
+
+    .thumbnail{
+        width: 100vw;
     }
 }
