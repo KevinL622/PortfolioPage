@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "Open Sans" ,sans-serif;
 }
 
 #navigation{
@@ -8,6 +9,8 @@ body {
     text-align: right;
     position: fixed;
     width: 100%;
+    animation-duration: 3s;
+    animation-name: bounceIn;
 }
 
 .navbar{
@@ -23,6 +26,19 @@ body {
   color: white;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 #background{
     width: 100%;
@@ -32,7 +48,10 @@ body {
     background-position: right 100%;
     background-size: cover;
     background-attachment: fixed;
+    animation-duration: 2s;
+    animation-name: bounceIn;
 }
+
 
 #welcome{
     text-align: center;
@@ -40,15 +59,22 @@ body {
 }
 
 .welcomeText{
-    color: white;
+    color: black;
 }
 
 .welcomeText.name, .title{
     font-size: 3rem;
 }
 
-#projects{
+.welcomeText.position{
+    font-size: 2rem;
+}
+
+#technologies, #about, #projects{
     text-align: center;
+}
+
+#projects{
     height: auto;
 }
 
@@ -58,9 +84,14 @@ body {
     min-width: 320px;
 }
 
-#technologies, #about{
-    height: 75vh;
-    text-align: center;
+#technologies{
+    background-color: #4CAF50;
+    height: 70vh;
+}
+
+#about{
+    background-color: #333;
+    height: 50vh;
 }
 
 i{
