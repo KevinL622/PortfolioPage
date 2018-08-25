@@ -121,10 +121,24 @@ body {
 /*Projects Section*/
 #projects{
     padding-left: 10vh;
+    padding-right: 10vh;
     padding-top: 10vh;
     height: auto;
-    background-color: #633;
+    background-color: white;
+    justify-content: center;
+}
+
+.tile{
+    border: 5px solid black;
     display: flex;
+}
+
+.odd{
+    text-align: left;
+}
+
+.even{
+    text-align: right;
 }
 
 .thumbnail{
@@ -136,7 +150,7 @@ body {
 }
 
 .thumbnail:hover{
-    transform: scale(1.25);
+    transform: scale(1.2);
 }
 
 #AhriGuide {
@@ -166,16 +180,22 @@ i{
 
 
 /*Small Screen Lower Res Photo*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 575px){
+    #background, #projects, #technologies, #about{
+        width: 575px;
+    }
+}
+
+@media only screen and (max-width: 725px){
     #background {
         background-image: url("https://lh3.googleusercontent.com/vGyrvnNiiGXGpotxS6pzSHsyIBOAodcy0R23rRsPmWykkKtwhBHuU225Pmkd3TXX5UswWrWUfeP2n60XqBT5DWHnIYQ1FWZk4HSiceyxmbt-3rkYV-8Gh10ss1DUAFrel5rA37omSA=w2400");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center;
-        background-attachment: fixed;
     }
 
-    .thumbnail{
-        width: 100vw;
+    #background, #projects, #technologies, #about {
+        width: 100%;
+    }
+
+    .odd, .even {
+        text-align: center;
     }
 }
