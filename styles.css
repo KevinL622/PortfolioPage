@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family:"open sans", sans-serif;
+    background-color: #027495;
 }
 
 /*Navigation Bar*/
 #navigation{
-    background-color: #333;
+    background-color: rgb(5,31,52, .7);
     display: block;
     text-align: right;
     position: fixed;
@@ -13,23 +14,24 @@ body {
     animation-duration: 3s;
     animation-name: bounceIn;
     z-index: 2;
+    padding-right: 20%;
+    height: 6.5vh;
 }
 
 .navbar{
+    position: relative;
     color: #f2f2f2;
-    float: left;
     padding: 1vh;
     font-size: 2rem;
     text-decoration: none;
 }
 
 #navigation a:hover {
-  background-color: #4CAF50;
+  background-color: #01a9c1;
   color: white;
 }
 
 .dropdown{
-    float: left;
     position: relative;
     display: inline-block;
 }
@@ -47,7 +49,6 @@ body {
     display: none;
     top: 100%;
     position: absolute;
-    background-color: #f9f9f9;
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -56,7 +57,7 @@ body {
 .dropdown-content a {
     float: none;
     color: #f2f2f2;
-    background: #333;
+    background: rgb(5,31,52, .7);
     padding: 2px;
     text-decoration: none;
     display: block;
@@ -64,7 +65,7 @@ body {
 }
 
 .dropdown-content a:hover, .dropdown:hover .dropbtn {
-    background-color: #4CAF50;
+    background-color: #01a9c1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -88,7 +89,7 @@ body {
 #background{
     width: 100%;
     height: 100vh;
-    background-image: url("https://lh3.googleusercontent.com/Oo5142D6TucGXzxbO-kGlExxCVKMCKcAgq0JKAJRaKxUiVvv7koBhXZXNkeOVNGeJ6T951HvU7-DQ3F5U2m_yyQ84AYPSVRuLrKNLznsn0alAeAusnjeYSmiDIiE3Ny59VGd5vVR1Q=w2400");
+    background-image: url('waves.jpg');
     background-repeat: no-repeat;
     background-position: right 100%;
     background-size: cover;
@@ -98,20 +99,21 @@ body {
 }
 
 #welcome{
-    text-align: center;
     padding-top: 10%;
 }
 
 .welcomeText{
-    color: black;
+    margin-left: 15%;
+    text-align: left;
+    color: white;
 }
 
 .welcomeText.name, .title{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .welcomeText.position{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /*Rest of the sections */
@@ -119,12 +121,15 @@ body {
     text-align: center;
 }
 
+.title{
+    color: white;
+}
 /*Projects Section*/
 #projects{
     padding-left: 10vh;
     padding-right: 10vh;
     height: auto;
-    background-color: white;
+    background-color: #027495;
 }
 
 .tileHolder {
@@ -135,10 +140,10 @@ body {
 }
 
 .tile{
-    width: 40vh;
+    width: 50vh;
     height: 40vh;
-    margin: 1vh;
-    border-radius: 15px;
+    margin: 2vh;
+    border-radius: 10px;
     border: 2px solid black;
     overflow: hidden;
     text-align: center;
@@ -149,7 +154,7 @@ body {
 .thumbnail{
     display: block;
     height: 40vh;
-    width: 40vh;
+    width: 50vh;
     border-radius: 15px;
     opacity: 1;
     transition: .5s ease;
@@ -158,6 +163,7 @@ body {
 }
 
 .description{
+    color: white;
     transition: .5s ease;
     font-size: .7em;
     opacity: 0;
@@ -169,6 +175,7 @@ body {
 }
 
 .btn {
+    top: 5%;
     border-radius: 5px;
     color: white;
     background-color: crimson;
@@ -191,17 +198,14 @@ body {
 
 /*Techonologies Section*/
 #technologies{
-    display: flex;
-    background-color: #4CAF50;
-    height: 70vh;
-    padding-top: 10vh;
-    padding-left: 10vh;
+    background-color: #bad6db;
+    height: 75vh;
+    padding: 5vh;
 }
 
 /*About Me Section*/
 #about{
-    display: flex;
-    background-color: #333;
+    background-color: #027495;
     height: 50vh;
     padding-left: 10vh;
 }
@@ -210,6 +214,10 @@ i{
     font-size: 150px;
 }
 
+footer{
+    text-align: right;
+    color: white;
+}
 
 /*Small Screen Lower Res Photo*/
 @media only screen and (max-width: 575px){
@@ -222,7 +230,9 @@ i{
     #background {
         background-image: url("https://lh3.googleusercontent.com/vGyrvnNiiGXGpotxS6pzSHsyIBOAodcy0R23rRsPmWykkKtwhBHuU225Pmkd3TXX5UswWrWUfeP2n60XqBT5DWHnIYQ1FWZk4HSiceyxmbt-3rkYV-8Gh10ss1DUAFrel5rA37omSA=w2400");
     }
-
+    .welcomeText{
+        color: black;
+    }
     #background, #projects, #technologies, #about {
         width: 100%;
     }
