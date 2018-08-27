@@ -12,6 +12,7 @@ body {
     width: 100%;
     animation-duration: 3s;
     animation-name: bounceIn;
+    z-index: 2;
 }
 
 .navbar{
@@ -122,35 +123,66 @@ body {
 #projects{
     padding-left: 10vh;
     padding-right: 10vh;
-    padding-top: 10vh;
     height: auto;
     background-color: white;
+}
+
+.tileHolder {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 
 .tile{
-    border: 5px solid black;
-    display: flex;
-}
-
-.odd{
-    text-align: left;
-}
-
-.even{
-    text-align: right;
+    width: 40vh;
+    height: 40vh;
+    margin: 1vh;
+    border-radius: 15px;
+    border: 2px solid black;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    position: relative;
 }
 
 .thumbnail{
-    margin-top: 10vh;
-    width: auto;
-    height: 55vh;
-    min-width: 320px;
-    border-radius: 25px;
+    display: block;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 15px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
 }
 
-.thumbnail:hover{
-    transform: scale(1.2);
+.description{
+    transition: .5s ease;
+    font-size: .7em;
+    opacity: 0;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.tile:hover .thumbnail{
+    opacity: 0.2;
+}
+
+.tile:hover .description{
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 #AhriGuide {
@@ -193,9 +225,5 @@ i{
 
     #background, #projects, #technologies, #about {
         width: 100%;
-    }
-
-    .odd, .even {
-        text-align: center;
     }
 }
