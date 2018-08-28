@@ -214,9 +214,33 @@ body {
 
 /*About Me Section*/
 #about{
+    display: block;
     background-color: #027495;
     height: 60vh;
     padding-left: 10vh;
+}
+
+.profilePhoto{
+    display: block;
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-left: 10vh;
+}
+
+.profileText{
+    text-align: left;
+    width: 50%;
+    color: #f4f5f5;
+    transform: translate(10%, 0);
+    font-size: 1.5rem;
+}
+
+.contact{
+    text-align: right;
+    margin-right: 10vh;
+    transform: translate(0, -100%);
 }
 
 i{
@@ -236,10 +260,10 @@ footer{
 
 @media only screen and (max-width: 725px){
     #background {
-        background-image: url("https://lh3.googleusercontent.com/vGyrvnNiiGXGpotxS6pzSHsyIBOAodcy0R23rRsPmWykkKtwhBHuU225Pmkd3TXX5UswWrWUfeP2n60XqBT5DWHnIYQ1FWZk4HSiceyxmbt-3rkYV-8Gh10ss1DUAFrel5rA37omSA=w2400");
+        background-image: url("wavesMobile.jpg");
     }
     .welcomeText{
-        color: black;
+        color: #f4f5f5;
     }
     #background, #projects, #technologies, #about {
         width: 100%;
