@@ -14,8 +14,9 @@ body {
     animation-duration: 3s;
     animation-name: bounceIn;
     z-index: 2;
-    padding-right: 20%;
-    height: 6.5vh;
+    padding-right: 5%;
+    height: auto;
+    transition: top .5s;
 }
 
 .navbar{
@@ -99,7 +100,7 @@ body {
 }
 
 #welcome{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .welcomeText{
@@ -122,10 +123,17 @@ body {
 }
 
 .title{
-    color: white;
+    color: #f4f5f5;
+}
+
+.techTitle{
+    color: #027495;
+    font-size: 4rem;
 }
 /*Projects Section*/
 #projects{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
     padding-left: 10vh;
     padding-right: 10vh;
     height: auto;
@@ -192,21 +200,22 @@ body {
     transform: scale(1.05);
 }
 
-#AhriGuide {
-    margin-bottom: 10vh;
-}
-
 /*Techonologies Section*/
 #technologies{
     background-color: #bad6db;
-    height: 75vh;
-    padding: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.icon{
+    width: 150px;
+    transform: translate(0, -40%);
 }
 
 /*About Me Section*/
 #about{
     background-color: #027495;
-    height: 50vh;
+    height: 60vh;
     padding-left: 10vh;
 }
 
@@ -218,7 +227,6 @@ footer{
     text-align: right;
     color: white;
 }
-
 /*Small Screen Lower Res Photo*/
 @media only screen and (max-width: 575px){
     #background, #projects, #technologies, #about{

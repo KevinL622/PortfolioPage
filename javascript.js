@@ -25,3 +25,15 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+//Navbar disappears with downward scrolling and reappears with upward scrolling.
+var prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("navigation").style.top = "0";
+  } else {
+    document.getElementById("navigation").style.top = "-50px";
+  }
+  prevScrollPos = currentScrollPos;
+}
