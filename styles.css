@@ -152,7 +152,6 @@ body {
     height: 40vh;
     margin: 2vh;
     border-radius: 10px;
-    border: 2px solid black;
     overflow: hidden;
     text-align: center;
     display: block;
@@ -172,14 +171,22 @@ body {
 
 .description{
     color: white;
+    background-color: rgb(5,31,52, .7);
     transition: .5s ease;
-    font-size: .7em;
     opacity: 0;
     width: 90%;
-    top: 15%;
+    top: 10%;
     left: 5%;
     position: absolute;
     text-align: center;
+}
+
+.tileTitle{
+    font-size: 1rem;
+}
+
+.projectText{
+    font-size: .8rem;
 }
 
 .btn {
@@ -207,48 +214,62 @@ body {
     padding-bottom: 10vh;
 }
 
-.icon{
+.techIcon{
+    font-size: 150px;
+}
+
+.iconJS{
     width: 150px;
     transform: translate(0, -40%);
 }
 
 /*About Me Section*/
 #about{
-    display: block;
     background-color: #027495;
-    height: 60vh;
     padding-left: 10vh;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    margin: 5%
 }
 
 .profilePhoto{
     display: block;
     border-radius: 10px;
     width: 150px;
-    height: auto;
-    float: left;
-    margin-left: 10vh;
+    height: 225px;
 }
 
 .profileText{
+    display: block;
     text-align: left;
     width: 50%;
     color: #f4f5f5;
-    transform: translate(10%, 0);
     font-size: 1.5rem;
+    margin-left: 5%;
 }
 
 .contact{
-    text-align: right;
-    margin-right: 10vh;
-    transform: translate(0, -100%);
+    display: flex;
+    justify-content: center;
+    margin: 5%;
 }
 
-i{
-    font-size: 150px;
+.githubIcon{
+    font-size: 100px;
+    margin: 25px;
+}
+
+.iconSocial{
+    width: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 footer{
-    text-align: right;
+    text-align: center;
     color: white;
 }
 /*Small Screen Lower Res Photo*/
