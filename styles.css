@@ -4,27 +4,44 @@ body {
     background-color: #027495;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*Navigation Bar*/
 #navigation{
     background-color: rgb(5,31,52, .7);
-    display: block;
     text-align: right;
     position: fixed;
     width: 100%;
+    height: auto;
     animation-duration: 3s;
     animation-name: bounceIn;
     z-index: 2;
-    padding-right: 5%;
-    height: auto;
     transition: top .5s;
 }
 
 .navbar{
     position: relative;
     color: #f2f2f2;
-    padding: 1vh;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 2rem;
     text-decoration: none;
+}
+
+.endNav{
+    margin-right: 15px;
 }
 
 #navigation a:hover {
@@ -51,6 +68,7 @@ body {
     top: 100%;
     position: absolute;
     width: 200px;
+    font-size: 1.15rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -73,20 +91,6 @@ body {
     display: block;
 }
 /*Welcome Section */
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 #background{
     width: 100%;
     height: 100vh;
@@ -110,11 +114,11 @@ body {
 }
 
 .welcomeText.name, .title{
-    font-size: 4rem;
+    font-size: 5vw;
 }
 
 .welcomeText.position{
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 /*Rest of the sections */
@@ -128,7 +132,7 @@ body {
 
 .techTitle{
     color: #027495;
-    font-size: 4rem;
+    font-size: 5vw;
 }
 /*Projects Section*/
 #projects{
@@ -174,30 +178,45 @@ body {
     background-color: rgb(5,31,52, .7);
     transition: .5s ease;
     opacity: 0;
-    width: 90%;
-    top: 10%;
-    left: 5%;
+    width: 50vh;
+    height: 40vh;
+    top: 0%;
+    left: 0%;
     position: absolute;
     text-align: center;
+    padding-top: 15px;
 }
 
+/*Text sizes inside project tiles*/
 .tileTitle{
     font-size: 1rem;
 }
 
 .projectText{
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: .8rem;
 }
 
 .btn {
-    top: 5%;
     border-radius: 5px;
+    border: 2px solid crimson;
     color: white;
-    background-color: crimson;
     text-decoration: none;
     padding: .5em;
+    -moz-box-transition: all ease .8s;
+    -webkit-box-transition: all ease .8s;
+    transition: all ease .8s;
 }
 
+/*launch button fill animation*/
+.btn:hover{
+    -moz-box-box-shadow: inset 100px 0 0 0 crimson;
+    -webkit-box-box-shadow: inset 100px 0 0 0 crimson;
+    box-shadow: inset 100px 0 0 0 crimson;
+}
+
+/*tile hover effects*/
 .tile:hover .thumbnail{
     opacity: 0.2;
 }
@@ -220,13 +239,11 @@ body {
 
 .iconJS{
     width: 150px;
-    transform: translate(0, -40%);
 }
 
 /*About Me Section*/
 #about{
     background-color: #027495;
-    padding-left: 10vh;
 }
 
 .profile{
@@ -280,13 +297,38 @@ footer{
 }
 
 @media only screen and (max-width: 725px){
+    #navigation{
+        text-align: center;
+    }
+    .navbar{
+        font-size: 1.5rem;
+    }
+    .endNav{
+        margin-right: 0;
+    }
+
     #background {
         background-image: url("wavesMobile.jpg");
     }
+
     .welcomeText{
         color: #f4f5f5;
     }
+
     #background, #projects, #technologies, #about {
         width: 100%;
+    }
+
+    #projects{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .profile{
+        display: inline;
+    }
+
+    .profileText{
+        width: 90%;
     }
 }
