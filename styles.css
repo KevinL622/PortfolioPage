@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family:"open sans", sans-serif;
     background-color: #027495;
-    overflow-x: hidden;
+
 }
 
 @keyframes bounceIn {
@@ -19,6 +19,48 @@ body {
   }
 }
 
+@-webkit-keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@-moz-keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@-o-keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 /*Navigation Bar*/
 #navigation{
     background-color: rgb(5,31,52, .7);
@@ -26,8 +68,14 @@ body {
     position: fixed;
     width: 100vw;
     animation-duration: 3s;
+    -webkit-animation: bounceIn 3s;
+    -moz-animation: bounceIn 3s;
+    -o-animation: bounceIn 3s;
     animation-name: bounceIn;
     z-index: 2;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
     transition: top .5s;
 }
 
@@ -41,7 +89,7 @@ body {
 }
 
 .endNav{
-    margin-right: 15px;
+    margin-right: 5vw;
 }
 
 #navigation a:hover {
@@ -100,6 +148,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
     animation-duration: 2s;
+    -webkit-animation: bounceIn 2s;
+    -moz-animation: bounceIn 2s;
+    -o-animation: bounceIn 2s;
     animation-name: bounceIn;
 }
 
@@ -119,6 +170,10 @@ body {
 
 .welcomeText.position{
     font-size: 3vw;
+}
+
+.email{
+    font-size: 2vw;
 }
 
 /*Rest of the sections */
@@ -168,6 +223,10 @@ body {
     width: 50vh;
     border-radius: 15px;
     opacity: 1;
+    -moz-box-transition: .5s ease;
+    -webkit-box-transition: .5s ease;
+    -ms-box-transition: .5s ease;
+    -o-box-transition: .5s ease;
     transition: .5s ease;
     backface-visibility: hidden;
     position: relative;
@@ -176,6 +235,10 @@ body {
 .description{
     color: white;
     background-color: rgb(5,31,52, .7);
+    -moz-box-transition: .5s ease;
+    -webkit-box-transition: .5s ease;
+    -ms-box-transition: .5s ease;
+    -o-box-transition: .5s ease;
     transition: .5s ease;
     opacity: 0;
     width: 50vh;
@@ -206,6 +269,8 @@ body {
     padding: .5em;
     -moz-box-transition: all ease .8s;
     -webkit-box-transition: all ease .8s;
+    -ms-box-transition: all ease .8s;
+    -o-box-transition: all ease .8s;
     transition: all ease .8s;
 }
 
@@ -213,6 +278,8 @@ body {
 .btn:hover{
     -moz-box-box-shadow: inset 100px 0 0 0 crimson;
     -webkit-box-box-shadow: inset 100px 0 0 0 crimson;
+    -ms-box-box-shadow: inset 100px 0 0 0 crimson;
+    -o-box-box-shadow: inset 100px 0 0 0 crimson;
     box-shadow: inset 100px 0 0 0 crimson;
 }
 
@@ -223,6 +290,10 @@ body {
 
 .tile:hover .description{
     opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -262,7 +333,7 @@ body {
 .profileText{
     display: block;
     text-align: left;
-    width: 50%;
+    width: 40%;
     color: #f4f5f5;
     font-size: 1.5rem;
     margin-left: 5%;
@@ -290,9 +361,26 @@ footer{
     color: white;
 }
 /*Small Screen Lower Res Photo*/
+@media only screen and (max-width: 400px){
+    #background{
+        height: 100%;
+        background-attachment: local;
+    }
+
+    .tile{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
 @media only screen and (max-width: 575px){
     #background, #projects, #technologies, #about{
         width: 320px;
+        margin: 0;
+        padding: 0;
     }
     .githubIcon{
         margin: 5px;
@@ -347,5 +435,13 @@ footer{
 
     .profileText{
         width: 90%;
+        font-size: 1rem;
+    }
+
+    .profilePhoto{
+        display: inline-block;
+        border-radius: 10px;
+        width: 150px;
+        height: 225px;
     }
 }
