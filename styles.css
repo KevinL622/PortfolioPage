@@ -63,6 +63,7 @@ body {
 
 /*Navigation Bar*/
 #navigation{
+    background-color: #051f34; /*fall back color*/
     background-color: rgb(5,31,52, .7);
     text-align: right;
     position: fixed;
@@ -124,6 +125,7 @@ body {
 .dropdown-content a {
     float: none;
     color: #f2f2f2;
+    background: #051f34; /*fall back color*/
     background: rgb(5,31,52, .7);
     padding: 2px;
     text-decoration: none;
@@ -234,6 +236,7 @@ body {
 
 .description{
     color: white;
+    background-color: #051f34; /*fall back solor*/
     background-color: rgb(5,31,52, .7);
     -moz-box-transition: .5s ease;
     -webkit-box-transition: .5s ease;
@@ -383,7 +386,7 @@ footer{
         padding: 0;
     }
     .description{
-        opacity: 1;
+        opacity: .9;
     }
     .githubIcon{
         margin: 5px;
