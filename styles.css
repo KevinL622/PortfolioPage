@@ -98,7 +98,7 @@ body {
 }
 
 .navbar:hover {
-  background-color: #01a9c1;
+  background-color: #FF8400;
   color: white;
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .dropdown-content a:hover, .dropdown:hover .dropbtn {
-    background-color: #01a9c1;
+    background-color: #FF8400;
 }
 
 .dropdown:hover .dropdown-content {
@@ -164,7 +164,7 @@ body {
 }
 
 #welcome{
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .welcomeText{
@@ -179,6 +179,7 @@ body {
 
 .title{
     font-size: 5vw;
+    color: #f4f5f5;
 }
 
 .welcomeText.position{
@@ -193,10 +194,6 @@ body {
 /*Rest of the sections */
 #technologies, #about, #projects{
     text-align: center;
-}
-
-.title{
-    color: #f4f5f5;
 }
 
 .techTitle{
@@ -229,6 +226,29 @@ body {
     text-align: center;
     display: block;
     position: relative;
+    box-shadow: 10px 10px 10px #bad6db;
+}
+
+.tileOverlay{
+    background-color: #FF8400;
+    border-radius: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    -moz-box-transition: .5s ease;
+    -webkit-box-transition: .5s ease;
+    -ms-box-transition: .5s ease;
+    -o-box-transition: .5s ease;
+    transition: .5s ease;
 }
 
 .thumbnail{
@@ -236,7 +256,7 @@ body {
     width: 50vh;
     height: 40vh;
     border-radius: 10px;
-    opacity: 1;
+    opacity: .3;
     -moz-box-transition: .5s ease;
     -webkit-box-transition: .5s ease;
     -ms-box-transition: .5s ease;
@@ -280,7 +300,7 @@ body {
 
 .btn {
     border-radius: 5px;
-    border: 2px solid crimson;
+    border: 2px solid #FF8400;
     color: white;
     text-decoration: none;
     padding: .5em;
@@ -293,11 +313,11 @@ body {
 
 /*launch button fill animation*/
 .btn:hover{
-    -moz-box-box-shadow: inset 100px 0 0 0 crimson;
-    -webkit-box-box-shadow: inset 100px 0 0 0 crimson;
-    -ms-box-box-shadow: inset 100px 0 0 0 crimson;
-    -o-box-box-shadow: inset 100px 0 0 0 crimson;
-    box-shadow: inset 100px 0 0 0 crimson;
+    -moz-box-box-shadow: inset 100px 0 0 0 #FF8400;
+    -webkit-box-box-shadow: inset 100px 0 0 0 #FF8400;
+    -ms-box-box-shadow: inset 100px 0 0 0 #FF8400;
+    -o-box-box-shadow: inset 100px 0 0 0 #FF8400;
+    box-shadow: inset 100px 0 0 0 #FF8400;
 }
 
 /*tile hover effects*/
@@ -312,6 +332,10 @@ body {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+.tile:hover .tileOverlay{
+    opacity: 0;
 }
 
 /*Techonologies Section*/
@@ -400,12 +424,38 @@ footer{
         margin: 0;
         padding: 0;
     }
-    .description{
-        opacity: .9;
+
+    #welcome{
+        padding-top: 25%;
     }
+
+    .tileTitle{
+        margin-top: 5%;
+        font-size: .9rem;
+    }
+
+    .tileOverlay{
+        opacity: 0;
+    }
+
+    .projectText{
+        font-size: .8rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .thumbnail{
+        opacity: .2;
+    }
+
+    .description{
+        opacity: 1;
+    }
+
     .githubIcon{
         margin: 5px;
     }
+
     .iconSocial{
         margin-left: 5px;
         margin-right: 5px;
