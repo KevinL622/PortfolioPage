@@ -382,8 +382,8 @@ body {
 .profilePhoto{
     display: block;
     border-radius: 50px;
-    width: auto;
-    height: 225px;
+    width: 240px;
+    height: 260px;
 }
 
 .profileText{
@@ -525,8 +525,5 @@ footer{
 
     .profilePhoto{
         display: inline-block;
-        border-radius: 10px;
-        width: 150px;
-        height: 225px;
     }
 }
