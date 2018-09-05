@@ -453,13 +453,17 @@ footer{
     }
 
     .projectText{
-        font-size: .8rem;
+        font-size: .7rem;
         padding-left: 10%;
         padding-right: 10%;
     }
 
     .thumbnail{
         opacity: .2;
+    }
+
+    .profileText{
+        padding-left: 5%;
     }
 
     .description{
