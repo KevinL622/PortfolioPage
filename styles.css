@@ -337,7 +337,7 @@ body {
 }
 
 .tile:hover .description{
-    opacity: 1;
+    opacity: .9;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -459,7 +459,7 @@ footer{
     }
 
     .thumbnail{
-        opacity: .2;
+        opacity: .8;
     }
 
     .profileText{
@@ -467,7 +467,7 @@ footer{
     }
 
     .description{
-        opacity: 1;
+        opacity: .9;
     }
 
     .githubIcon{
