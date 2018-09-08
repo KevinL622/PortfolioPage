@@ -151,7 +151,7 @@ body {
 #background{
     width: 100%;
     height: 100vh;
-    background-image: url('wavesLarge.jpg');
+    background-image: url('wavesMedium.jpg');
     background-repeat: no-repeat;
     background-position: right 100%;
     background-size: cover;
@@ -226,13 +226,12 @@ body {
 }
 
 .tile{
-    width: 45vh;
-    height: 36vh;
+    width: 320px;
+    height: 256px;
     margin: 2vh;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    display: block;
     position: relative;
 }
 
@@ -260,8 +259,8 @@ body {
 
 .thumbnail{
     display: block;
-    width: 45vh;
-    height: 36vh;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     opacity: .35;
     -moz-box-transition: .5s ease;
@@ -274,6 +273,11 @@ body {
 }
 
 .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5%;
     color: white;
     /*background-color: #B25D00;*/
     background-color: #051f34;
@@ -285,13 +289,12 @@ body {
     -o-box-transition: .5s ease;
     transition: .5s ease;
     opacity: 0;
-    width: 45vh;
-    height: 36vh;
-    top: 0%;
-    left: 0%;
+    width: inherit;
+    height: inherit;
+    top: -5%;
     position: absolute;
     text-align: center;
-    padding-top: 3%;
+    z-index: 4;
 }
 
 /*Text sizes inside project tiles*/
@@ -303,6 +306,8 @@ body {
 .projectText{
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
     font-size: .85rem;
 }
@@ -312,6 +317,7 @@ body {
     border: 2px solid #FF8400;
     color: white;
     text-decoration: none;
+    top: 0;
     padding: .5em;
     padding-left: 1em;
     padding-right: 1em;
