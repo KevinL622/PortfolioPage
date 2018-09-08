@@ -208,10 +208,12 @@ body {
     margin-bottom: auto;
     padding-left: 10vh;
     padding-right: 10vh;
+    padding-top: 20px;
+    padding-bottom: 10vh;
     /*background-color: #027495;*/
     /*background-color: #044A64;*/
     /*background-color: #35637F;*/
-    background: linear-gradient(#005D7F, #4CCFFF, #bad6db );
+    background: linear-gradient(180deg, #005D7F, #4CCFFF);
 }
 
 .projectsTitle{
@@ -358,7 +360,7 @@ body {
 /*Techonologies Section*/
 #technologies{
     background-color: #bad6db;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 10vh;
     margin-bottom: 0;
     margin-top: 0;
@@ -377,6 +379,7 @@ body {
     /*background-color: #027495;*/
     /*background-color: #044A64;*/
     background: linear-gradient(#005D7F, #35637F);
+    padding-top: 20px;
 }
 
 .profile{
@@ -442,7 +445,6 @@ footer{
     #background, #projects, #technologies, #about{
         width: 320px;
         margin: 0;
-        padding: 0;
     }
 
     #welcome{
@@ -469,7 +471,7 @@ footer{
     }
 
     .profileText{
-        padding-left: 5%;
+        padding-left: 3%;
     }
 
     .description{
