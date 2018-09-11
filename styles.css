@@ -90,8 +90,8 @@ body {
     text-align: right;
     position: fixed;
     width: 100vw;
-    padding-top: .5vw;
-    padding-bottom: .5vw;
+    padding-top: .8vw;
+    padding-bottom: .8vw;
     animation-duration: 3s;
     -webkit-animation: slideIn 3s;
     -moz-animation: slideIn 3s;
@@ -101,16 +101,16 @@ body {
     -webkit-transition: top .5s;
     -moz-transition: top .5s;
     -o-transition: top .5s;
-    transition: top .5s;
+    transition: top 1s;
 }
 
 .navbar{
     position: relative;
     color: #f2f2f2;
-    padding-left: 1vw;
     padding-right: 1vw;
-    padding-top: .5vw;
-    padding-bottom: .5vw;
+    padding-left: 1vw;
+    padding-top: .8vw;
+    padding-bottom: .8vw;
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .dropdown-content{
-    margin-top: .5vw;
+    margin-top: .8vw;
     display: none;
     top: 100%;
     position: absolute;
