@@ -90,8 +90,8 @@ body {
     text-align: right;
     position: fixed;
     width: 100vw;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
     animation-duration: 3s;
     -webkit-animation: slideIn 2s;
     -moz-animation: slideIn 2s;
@@ -107,11 +107,8 @@ body {
 .navbar{
     position: relative;
     color: #f2f2f2;
-    padding-right: 1vw;
-    padding-left: 1vw;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
-    font-size: 1.5rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -120,8 +117,7 @@ body {
 }
 
 .navbar:hover {
-  background-color: #FF8400;
-  color: white;
+  color: #FF8400;
 }
 
 .dropdown{
@@ -139,14 +135,14 @@ body {
 }
 
 .dropdown-content{
-    margin-top: .8vw;
+    margin-top: .8rem;
     display: block;
     opacity: 0;
     overflow: hidden;
     top: 100%;
     position: absolute;
     width: 200px;
-    font-size: 1.15rem;
+    font-size: .9rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     -webkit-transition: all .5s ease;
@@ -160,16 +156,14 @@ body {
     color: #f2f2f2;
     background: #051f34; /*fall back color*/
     background: rgb(5,31,52, .7);
-    padding-left: 1rem;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
+    padding: .8rem 1.6rem;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
 .dropdown-content a:hover, .dropdown:hover .dropbtn {
-    background-color: #FF8400;
+    color: #FF8400;
 }
 
 .dropdown:hover .dropdown-content {
@@ -425,9 +419,9 @@ body {
 .profileText{
     display: block;
     text-align: left;
-    width: 35%;
+    width: 30%;
     color: #f4f5f5;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 5%;
 }
 
@@ -474,8 +468,17 @@ footer{
         margin: 0;
     }
 
+    .navbar{
+        padding: .4rem .8rem;
+    }
+
+    .dropdown-content{
+        left: -13%;
+    }
+
     #welcome{
-        padding-top: 25%;
+        padding-top: 30%;
+        padding-left: 10%;
     }
 
     .tileTitle{
@@ -519,9 +522,9 @@ footer{
     #navigation{
         text-align: center;
     }
-    .navbar{
+    /*.navbar{
         font-size: 1.5rem;
-    }
+    }*/
     .endNav{
         margin-right: 0;
     }
