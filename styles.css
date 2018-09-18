@@ -137,7 +137,7 @@ body {
 .dropdown-content{
     margin-top: .8rem;
     display: block;
-    opacity: 0;
+    height: 0;
     overflow: hidden;
     top: 100%;
     position: absolute;
@@ -167,7 +167,7 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-    opacity: 1;
+    height: auto;
 }
 /*Welcome Section */
 #background{
