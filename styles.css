@@ -250,8 +250,8 @@ body {
 }
 
 .tile{
-    width: 320px;
-    height: 256px;
+    width: 280px;
+    height: 226px;
     margin: 2vh;
     border-radius: 10px;
     overflow: hidden;
